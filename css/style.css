@@ -95,7 +95,14 @@ body>footer {
     padding-bottom: 0;
 }
 
-footer .container {
+footer .container:first-child {
     border-top: 8px solid var(--primary);
-    padding: 20px 0;
+    padding: 20px 0 10px;
+}
+
+footer .container:last-child {
+    padding: 20px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
